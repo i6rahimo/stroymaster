@@ -1,6 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -13,7 +13,7 @@
   --first-color-lighten: hsl(228, 100%, 97%);
   --second-color: hsl(25, 83%, 53%);
   --title-color: hsl(228, 57%, 28%);
-  --text-color: hsl(228, 15%, 50%);
+  --text-color: #33333;
   --text-color-light: hsl(228, 12%, 75%);
   --border-color: hsl(228, 99%, 98%);
   --body-color: #fff;
@@ -21,7 +21,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Raleway', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -57,6 +57,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-style: normal;
 }
 
 html {
@@ -110,27 +111,17 @@ button {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1300px;
-  margin-left: 70px;
-  margin-right: 70px;
+  max-width: 1360px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .grid {
   display: grid;
 }
 
-.section {
-  padding: 4.5rem 0 2rem;
-}
 
-.section__title {
-  font-size: var(--h2-font-size);
-  margin-bottom: 1rem;
-}
-
-.section__title span {
-  color: var(--second-color);
-}
 
 .section__subtitle {
   display: block;
@@ -141,7 +132,138 @@ button {
 .main {
   overflow: hidden; /* For the animations ScrollReveal*/
 }
+.header__logo {
+  display: block;
+  background-color: orange;
+  max-width: 100%;
+  width: 168px;
+  height: 72px;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0 36px 0 ;
+}
+.header__address {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+.header__address p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.header__address span {
+  font-weight: 400;
+  font-size: 15px;
+}
+.header__address_gmail {
+  text-align: center;
+}
+.header__address_subtitle {
+  color: #F2994A;
+}
+.header__addres_phone {
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+}
+.btn {
+ border: none;
+ outline: none;
+ background: #F2994A;
+ color: #ffff; 
+ border-radius: 32px;
+}
+.header__btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 24px 18px;
+}
 
+/* =================== header nav */
+
+.header__nav {
+  position: relative;
+  background: #F2C94C;
+}
+.header__nav::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 72px;
+  right: 100%;
+  top: 0;
+  background: #F2C94C;
+}
+.header__nav::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 72px;
+  right: -100%;
+  top: 0;
+  background: #F2C94C;
+}
+.header__list {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+.header__link {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500
+}
+/* ===================== HOME =================== */
+.home__wrapper {
+  margin: 64px 0 123px 0;
+  display: flex;
+  background: linear-gradient(90deg, #F3A657 0%, #F3A657 100%);
+  border-radius: 32px;
+  justify-content: space-between;
+}
+.home__text {
+  max-width: 100%;
+  width: 603px;
+  padding: 50px 0 56px 81px;
+}
+.home__text_title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fff;
+}
+.home__text_item {
+  display: flex;
+  max-width: 100%;
+}
+.home__text_item p {
+  padding-left:35px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+}
+.circle{
+  width: 22px;
+  max-width: 100%;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+}
+.home__text_item span {
+  color: #fff;
+}
+.home__phone {
+  position: absolute;
+}
 /*=============== HEADER & NAV ===============*/
 
 

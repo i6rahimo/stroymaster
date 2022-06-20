@@ -6,6 +6,9 @@
 
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
 
         <!--=============== BOXICONS ===============-->
         
@@ -14,7 +17,7 @@
         <link rel="stylesheet" href="">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/assets/css/styles.css">
 
         <title>Responsive real state website - Bedimcode</title>
     </head>
@@ -23,15 +26,16 @@
         <header class="header" id="header">
             <div class="container">
                 <div class="header__info">
-                    <img src="" alt="" class="header__logo">
+                    <div class="header__logo"></div>
+                    <!-- <img src="/assets/img/logo.jpg" alt="logo" class="header__logo"> -->
                     <address class="header__address">
                         <p class="header__address_location">
                             Москва, ул.Автозаваодская, д.1 <br> <span>с 10:00 до 18:00 ежедневно</span> 
                         </p>
                         <p class="header__address_gmail">
-                            moyastroyka@gmail.com <span>Социальные сети</span>
+                            moyastroyka@gmail.com <br> <span class="header__address_subtitle">Социальные сети</span>
                         </p>
-                        <a href="tel:+77777777">+7 777 777-00-63 <span>Заказать звонок</span></a>
+                        <a class="header__addres_phone" href="tel:+77777777">+7 777 777-00-63 <br><span class="header__address_subtitle">Заказать звонок</span></a>
                     </address>
                     <button class="header__btn btn">Калькулятор ремонта</button>
                 </div>
@@ -70,8 +74,31 @@
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
+            <section class="home section container" id="home">
+                <div class="home__wrapper">
+                    <div class="home__text">
+                        <h1 class="home__text_title">Ремонт квартир под ключ по цене от 1990 рублей</h1>
+                        <div class="home__text_item">
+                            <div class="circle"></div>
+                            <p class="item__text">До <span>10 лет</span> гарантии</p>
+                        </div>
+                        <div class="home__text_item">
+                            <div class="circle"></div>
+                            <p class="item__text">Работа без предоплаты</p>
+                        </div>
+                        <div class="home__text_item">
+                            <div class="circle"></div>
+                        <p class="item__text">Выгода до<span> 100 000 рублей</span> за счте оптовых цен на стройматериалы</p>
+                        </div>
+                        <a href="#" class="home__text_btn btn">Заказать ремонт</a>
+                    </div>
+                    <div class="home__image">
+                        <img src="/assets/img/homebg.png" alt="Картинка" class="home__text_img">
+                    </div>
+                    <div class="home__phone">
+                        <img src="/assets/img/phone.svg" alt="Позвонить">
+                    </div>
+                </div>
             </section>
 
             <!--==================== LOGOS ====================-->
