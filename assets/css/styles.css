@@ -22,8 +22,8 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Raleway', sans-serif;
-  --biggest-font-size: 2.25rem;
-  --h1-font-size: 1.5rem;
+  --biggest-font-size: 32px;
+  --h1-font-size: 26px;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
@@ -42,8 +42,8 @@
 /* Responsive typography */
 @media screen and (min-width: 1024px) {
   :root {
-    --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
+    --biggest-font-size: 48px;
+    --h1-font-size: 40px;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -222,6 +222,7 @@ button {
 }
 /* ===================== HOME =================== */
 .home__wrapper {
+  position: relative;
   margin: 64px 0 123px 0;
   display: flex;
   background: linear-gradient(90deg, #F3A657 0%, #F3A657 100%);
@@ -229,17 +230,18 @@ button {
   justify-content: space-between;
 }
 .home__text {
-  max-width: 100%;
-  width: 603px;
+  width: 100%;
+  max-width: 603px;
   padding: 50px 0 56px 81px;
 }
 .home__text_title {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
-  font-size: 40px;
+  font-size: var(--h1-font-size);
   line-height: 48px;
   color: #fff;
+  padding: 0 0 24px 0;
 }
 .home__text_item {
   display: flex;
@@ -263,16 +265,100 @@ button {
 }
 .home__phone {
   position: absolute;
+  right: -15px;
+  bottom: -40px;  
+  width: 104px;
+  height: 104px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 20px rgba(242, 201, 76, 0.4);
 }
-/*=============== HEADER & NAV ===============*/
+.home__phone img {
+  z-index: 1;
+}
+.home__phone::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  right: 7;
+  bottom: 20;
+  background-color: #F2C94C;
+}
+.home__text_btn {
+  display: block;
+  max-width: 100%;
+  width: 252px;
+  text-align: center;
+  background-color: #fff;
+  color: #F2994A;
+  padding: 20px 41px;
+  border-radius: 32px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 34px;
+  transition: background-color .3s ease;
+}
+.home__text_btn:hover {
+  color: #fff;
+  background-color: #ff9233;
+}
+/*=============== BURGER ===============*/
 
-
+.burger {
+  order: -1;
+  display: none;
+  background: none;
+  width: 42px;
+  height: 62px;
+  cursor: pointer;
+}
+.burger__span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #F2994A;
+  border-radius: 32px;
+}
+.burger__span:not(:last-child) {
+  margin-bottom: 7px;
+}
+.header__phone_responsive {
+  display: none;
+}
 /* Change background header */
 
 
 /* Active link */
+/* ============== NAVIGATION ============== */
+.header__list {
+  background: #F2994A;
+  position: absolute;
+  width: 100%;
+  transform: translate(-15%, -10.5%);
+  height: 100vh;
+  z-index: 23;
+  flex-direction: column;
+  padding: 120px 0;
+}
+.header__link {
+  font-size: 22px;
+}
+.header__link:not(:last-child) {
 
-
+}
+.header__nav::after {
+  display: none;
+}
+.header__nav::before {
+  display: none;
+}
 /*=============== HOME ===============*/
 
 

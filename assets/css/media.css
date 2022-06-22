@@ -1,0 +1,30 @@
+@media (max-width: 1260px) {
+    .header__address {
+        display: none;
+    }
+    .header__btn {
+        display: none;
+    }
+    .header__logo {
+        margin: auto;
+    }
+    .home__phone {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .header__info {
+        position: relative;
+        justify-content: space-between;
+    }
+    .header__phone_responsive {
+        display: block;
+    }
+    .header__nav {
+        /* display: none; */
+    }
+    .home__wrapper {
+        margin-top: 32px ;
+    }
+}
