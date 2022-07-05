@@ -27,4 +27,42 @@
     .home__wrapper {
         margin-top: 32px ;
     }
+    .header__nav {
+        left: 100%;
+        position: fixed;
+        /* display: none; */
+    }
+    .header__nav.active {
+        display: block;
+        position: absolute;
+        background-color: chocolate;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        transition: left .5s ease-in-out;
+    }
+    
+    .header__nav::after {
+        display: none;
+    }
+    .header__nav::before {
+        display: none;
+    }
+    .header__list.active {
+        flex-direction: column;
+        padding: 120px 0;
+    }
+    .header__item {
+        margin: 20px;
+    }
+    .header__link {
+        font-weight: 600;
+        font-size: 25px;
+        color: #fff;
+    }
+    .burger {
+        z-index: 4;
+    }
 }

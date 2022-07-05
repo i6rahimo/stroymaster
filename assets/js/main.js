@@ -1,19 +1,10 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+const burger = document.querySelector('.burger')
+const whiteBurger = document.querySelector('.burger__span')
+const navbar = document.querySelector('.header__nav')
+const navbarList = document.querySelector('.header__list')
 
-
-/*=============== SWIPER POPULAR ===============*/
-
-
-/*=============== VALUE ACCORDION ===============*/
-
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== SHOW SCROLL UP ===============*/ 
-
-
-/*=============== DARK LIGHT THEME ===============*/ 
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+burger.addEventListener('click', (e) => {
+    navbar.classList.toggle('active')
+    navbarList.classList.toggle('active')
+    whiteBurger.classList.toggle('active')
+})
