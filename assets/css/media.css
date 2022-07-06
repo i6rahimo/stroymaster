@@ -65,4 +65,28 @@
     .burger {
         z-index: 4;
     }
+    .home__wrapper {
+        flex-wrap: wrap;
+    }
+    .home__text_img {   
+        /* transform: rotate(90deg); */
+    }
+    .home__text {
+        text-align: center;
+        margin:  auto;
+        padding: 30px 20px;
+    }
+    .circle {
+        display: none;
+    }
+    .home__text_btn {
+        display: none;
+    }
+    .home__text_responsive {
+        display: block;
+        font-size: 24px;
+    }
+    .item__text {
+        display: none;
+    }
 }

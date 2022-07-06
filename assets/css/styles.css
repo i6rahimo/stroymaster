@@ -336,6 +336,9 @@ button {
 .header__phone_responsive {
   display: none;
 }
+.home__text_responsive {
+  display: none;
+}
 /* Change background header */
 
 
