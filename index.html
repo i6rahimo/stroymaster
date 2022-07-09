@@ -9,18 +9,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="module" ></script>
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
 
         <!--=============== BOXICONS ===============-->
         
         
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="/assets/css/styles.css">
         <link rel="stylesheet" href="/assets/css/media.css">
 
         <title>Responsive real state website - Bedimcode</title>
+
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -113,30 +122,133 @@
                 </div>
             </section>
 
-            <!--==================== LOGOS ====================-->
-            <section class="logos section">
-                
-            </section>
+            <section class="about container">
+                <h1 class="about__title">
+                    Нужен ремонт квартиры в Москве?<br> <span class="orange-text"> Сергеич поможет! </span>
+                </h1>
+                <div class="about__content">
 
-            <!--==================== POPULAR ====================-->
-            <section class="section" id="popular">
-                
-            </section>
+                    <div class="about__content_text">
+                        <p>Рад приветствовать Вас на сайте СК «Иваныч Строй». </p>
+                        <p>
 
-            <!--==================== VALUE ====================-->
-            <section class="value section" id="value">
-                
-            </section>
+                            Меня зовут Сергей Иванович, и я представляю команду настоящих профессионалов в сфере дизайнерского ремонта квартир и помещений различного предназначения.
+                        </p>
+                        <p class="desktop-text">
+                            Название моей компании возникло не случайно. В детстве отец мне часто говорил, давая наставления: «Иван, строй дом, своё будущее». С тех пор прошло много времени, и я построил не только свой дом,но и много различных объектов, радующих клиентов высоким качеством внутренней отделки и нетривиальнымидизайнерскими решениями.</p>
+                        </p>
+                            <a href="#" class="btn about__btn">Подробнее о нас</a>
+                    </div>
+                    <div class="about__content_img">
+                        <img src="/assets/img/aboutbg.png" alt="">
+                    </div>
+                </div>
+                <div class="about__items">
+                    <div class="about__item">
+                        <span class="about__item_number">945</span>
+                        <p class="about__item_text">релизованных проектов</p>
+                    </div>
 
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                
-            </section>
+                    <div class="about__item">
+                        <span class="about__item_number">1245</span>
+                        <p class="about__item_text">довольных клиентов</p>
+                    </div>
 
-            <!--==================== SUBSCRIBE ====================-->
-            <section class="subscribe section">
-                
+                    <div class="about__item">
+                        <span class="about__item_number">97%</span>
+                        <p class="about__item_text">обращений <br> по рекомендации</p>
+                    </div>
+
+                    <div class="about__item">
+                        <span class="about__item_number">82к</span>
+                        <p class="about__item_text">выполнено отделки</p>
+                    </div>
+                </div>
+                <div class="swiper swiper__responsive">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide about__item">
+                        <span class="about__item_number">945</span>
+                        <p class="about__item_text">релизованных проектов</p>
+                      </div>
+                      <div class="swiper-slide about__item">
+                        <span class="about__item_number">1245</span>
+                        <p class="about__item_text">довольных клиентов</p>
+                      </div>
+                      <div class="swiper-slide about__item">
+                        <span class="about__item_number">97%</span>
+                        <p class="about__item_text">обращений <br> по рекомендации</p>
+                      </div>
+                      <div class="swiper-slide about__item">
+                        <span class="about__item_number">82к</span>
+                        <p class="about__item_text">выполнено отделки</p>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
             </section>
+            <section class="project container">
+                <h1 class="project__title">Наши <span class="orange-text">проекты</span></h1>
+                <div class="project__items">
+                    <div class="project__item active">
+                        <p class="project__item_text">Все проекты</p>
+                    </div>
+                    <div class="project__item">
+                        <p class="project__item_text">Диизайнерские</p>
+                    </div>
+                    <div class="project__item">
+                        <p class="project__item_text">Евроремонт</p>
+                    </div>
+                    <div class="project__item">
+                        <p class="project__item_text">Капитальный</p>
+                    </div>
+                </div>
+                <div class="project__cards_wrapper">
+                    <div class="project__cards">
+                        <div class="project__card">
+                            <img class="project__card_img" src="/assets/img/project1.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Этот проект сочетает в себе высокую функциональность оригинальную отделку и эргономность</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                        <div class="project__card">
+                            <img class="project__card_img" src="/assets/img/project1.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Этот проект сочетает в себе высокую функциональность оригинальную отделку и эргономность</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                        <div class="project__card project__card_last">
+                            <img class="project__card_img" src="/assets/img/project3.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Дом «Кливленд» спроектирован специалистами компании «ОлимпСтройСервис» для большой семьи. Особняк выполнен в стиле Райта, идеально вписывается в природу и обладает высоким функциональным наполнением.</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                    </div>
+                    <div class="project__cards">
+                        <div class="project__card">
+                            <img class="project__card_img" src="/assets/img/project1.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Этот проект сочетает в себе высокую функциональность оригинальную отделку и эргономность</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                        <div class="project__card">
+                            <img class="project__card_img" src="/assets/img/project1.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Этот проект сочетает в себе высокую функциональность оригинальную отделку и эргономность</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                        <div class="project__card project__card_last">
+                            <img class="project__card_img" src="/assets/img/project3.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Дом «Кливленд» спроектирован специалистами компании «ОлимпСтройСервис» для большой семьи. Особняк выполнен в стиле Райта, идеально вписывается в природу и обладает высоким функциональным наполнением.</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn project__card_btn">Посмотреть все проекты</a>
+            </section>
+            <section class=""></section>
         </main>
 
         <!--==================== FOOTER ====================-->
@@ -144,5 +256,6 @@
             
         </footer>
         <script src="/assets/js/main.js"></script>
+        <script type="module" src="/assets/js/swiper.js"></script>
     </body>
 </html>
