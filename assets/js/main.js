@@ -3,6 +3,7 @@ const burger = document.querySelector('.burger')
 const whiteBurger = document.querySelector('.burger__span')
 const navbar = document.querySelector('.header__nav')
 const navbarList = document.querySelector('.header__list')
+const tabBtns = document.querySelectorAll('.project__item')
 
 burger.addEventListener('click', (e) => {
     navbar.classList.toggle('active')
@@ -11,4 +12,15 @@ burger.addEventListener('click', (e) => {
 })
 
 
+tabBtns.forEach((e)=> {
+    e.addEventListener('click', ()=> {
+        if(e.classList.contains('active')) {
+            e.classList.remove('active')
+        }else {
+
+            e.classList.add('active')
+        }
+    })
+
+})
 
