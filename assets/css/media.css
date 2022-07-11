@@ -113,6 +113,19 @@
     .project__card_last {
         display: none;
     }
+    .register__items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .work__items {
+        justify-content: center;
+    }
+    .work__item:nth-child(odd) {
+        display: none;
+    }
+    .gift__wrapper img {
+        display: none;
+    }
 }
 
 @media (max-width: 726px ) {
@@ -141,5 +154,22 @@
     }
     .project__card_img {
         border-radius: 0 ;
+    }
+    .gift__text {
+        text-align: center;
+        padding: 30px 10px 30px 10px;
+    }
+    .gift__text_btn {
+        margin: auto;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .work-swiper {
+        height: 250px;
+    }
+    .work__item_desc span {
+        font-size: 10px;
     }
 }

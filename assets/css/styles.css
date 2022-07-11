@@ -592,21 +592,29 @@ button {
   display: flex;
   gap: 30px;
   align-items: center;
+  margin-bottom: 143px;
 }
 .register__item_img {
   width: 524px;
   max-width: 100%;
   border-radius: 20px;
 } 
+.register__item_img img {
+  width: 100%;
+}
 .register__item_selection {
   background: #FFFFFF;
   box-shadow: 0px 4px 20px rgba(51, 51, 51, 0.15);
   width: 746px;
-  width: 100%;
+  max-width: 100%;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 .item__selection_inner {
-  padding: 34px 81px 44px;
+  padding: 34px 10px 44px;
+  max-width: 100%;
+  position: relative;
 }
 .register__item_title {
   font-weight: 700;
@@ -650,6 +658,7 @@ select {
   border-radius: 10px;
   padding: 20px 24px;
   width: 584px;
+  max-width: 100%;
 }
 .register__choose p {
   font-weight: 600;
@@ -659,38 +668,229 @@ select {
 }
 .register__chekbox input {
 }
-.chekbox-register[type="checkbox"]  {
+.chekbox {
   width: 24px;
   height: 24px;
+  position: absolute;
   border: 1px solid #828282;
-  border-radius: 25px;
+  border-radius: 5px;
+  margin-left: -30px;
 }
-.register__chekbox {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+.chekbox-register {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .register__chekbox label:not(:last-child) {
   margin: 0 54px 0 0;
 }
-/* Swiper class */
+.check {
+  padding-left: 30px;
+  display: inline-flex;
+}
+.check:not(:last-child) {
+  padding-bottom: 15px;
+
+}
+
+.chekbox-register:checked + .chekbox {
+  background-color: #F2994A;
+  border: none;
+} 
+.register__btn {
+  margin: 42px 0 0;
+}
+.register__btn_btn {
+  width: 584px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.register__btn_text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+  margin-top: 17px;
+}
+
+/*=============== ORDER ===============*/
+
+.order__title {
+  font-size: var(--biggest-font-size);
+  text-align: center;
+}
+.order__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 54px;
+}
+.order__item {
+  position: relative;
+  width: 278px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center; 
+}
+.order__item_number {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 113px;
+  color: #F2994A;
+  opacity: 0.08;
+}
+.order__item_img {
+  width: 88px;
+  height: 88px;
+  margin: auto;
+}
+.order__item_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 30px;
+}
 
 
-/*=============== VALUE ===============*/
+/*=============== WORK ===============*/
+.work__title {
+  margin: 150px 0 45px;
+  text-align: center;
+  font-size: var(--biggest-font-size);
+}
+.work__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.work__item {
+  width: 413px;
+  max-width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(51, 51, 51, 0.15);
+  border-radius: 20px;
+}
+.work__item_title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+}
+.work__item_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;  
+  margin: 20px 0 24px;
+}
+.work__item_descs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.work__item_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+.work__item_desc img {
+  width: 32px;
+  height: 32px;
+}
+.work__item_desc span{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 9px;
+}
+.work-swiper {
+  height: 350px;
+}
+.work__item_textcontent {
+  padding: 0 24px 36px;
+}
+.work__btn {
+  margin: 64px auto 144px;
+  width: 264px;
+  max-width: 100%;
+  font-weight: 700;
+  font-size: 16px;  
+  line-height: 19px;
+  display: block;
+  text-align: center;
+  padding: 19px 0;
+}
+/*=============== GIFT ===============*/
 
+.gift__wrapper {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #C5C9CC;
+  display: flex;
+  margin-bottom: 139px;
+}
+.gift__text {
+  max-width: 100%;
+  padding: 74px 0 0 81px;
+}
+.gift__text_title {
+  font-size: var(--biggest-font-size);
+  color: #333333;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+}
+.gift__text_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 26px 0 28px;
+}
+.gift__text_btn {
+  padding: 19px 0;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  box-shadow: 0px 4px 20px rgba(242, 153, 74, 0.2);
+  border-radius: 32px;
+  width: 251px;
+  max-width: 100%;
+  color: #DE6C49;
+  display: block;
+  text-align: center;
+}
 
-/*Rotate icon and add shadows*/
+.gift__wrapper img {
 
-
-/*=============== CONTACT ===============*/
-
-
-/*=============== SUBSCRIBE ===============*/
-
-
-/*=============== FOOTER ===============*/
-
-
+}
+/*=============== TEAM ===============*/
+.team__title  {
+  font-size: var(--biggest-font-size);
+  text-align: center;
+}
+.team__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 16px auto 49px;
+  text-align: center;
+  width: 694px;
+  max-width: 100%;
+}
 /*=============== SCROLL BAR ===============*/
 
 
@@ -702,6 +902,7 @@ select {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+
 
 
 /* For medium devices */
