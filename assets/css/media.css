@@ -127,7 +127,15 @@
         display: none;
     }
 }
-
+@media (max-width: 950px) {
+    .team__slide::after {
+        display: none;
+    }
+    .team__slide {
+        max-width: 100%;
+        padding: 0;
+    }
+}
 @media (max-width: 726px ) {
     .swiper__responsive {
         display: flex;
@@ -171,5 +179,12 @@
     }
     .work__item_desc span {
         font-size: 10px;
+    }
+    .slider-large img:nth-child(0) {
+        width: 208px;
+        height: 208px;
+    }
+    .slider-large {
+
     }
 }
