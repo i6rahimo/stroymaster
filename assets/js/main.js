@@ -4,6 +4,13 @@ const whiteBurger = document.querySelector('.burger__span')
 const navbar = document.querySelector('.header__nav')
 const navbarList = document.querySelector('.header__list')
 const tabBtns = document.querySelectorAll('.project__item')
+const accordionBtns = document.querySelectorAll('.accordion__item')
+
+accordionBtns.forEach((e) => {
+    e.addEventListener('click', () => {
+        e.classList.toggle('open')
+    })
+})
 
 burger.addEventListener('click', (e) => {
     navbar.classList.toggle('active')

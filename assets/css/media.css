@@ -126,6 +126,13 @@
     .gift__wrapper img {
         display: none;
     }
+    .news__items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news__item_row {
+        display: none;
+    }
 }
 @media (max-width: 950px) {
     .team__slide::after {
@@ -133,7 +140,7 @@
     }
     .team__slide {
         max-width: 100%;
-        padding: 0;
+
     }
 }
 @media (max-width: 726px ) {
@@ -170,6 +177,13 @@
     .gift__text_btn {
         margin: auto;
     }
+    .accordion__item_text {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .accordion__item {
+        padding: 15px 16px;
+    }
     
 }
 
@@ -180,11 +194,28 @@
     .work__item_desc span {
         font-size: 10px;
     }
-    .slider-large img:nth-child(0) {
-        width: 208px;
-        height: 208px;
+    .slider-large > .team__slide_desc {
+        font-size: 13px;
+        margin-bottom: 10px;
     }
-    .slider-large {
+    .slider-large > .team__slider_sertification {
+        font-size: 12px;
+    }
+    .large-img {
+        width: 176px !important;
 
+        height: 176px !important;
+    }
+    .review__item {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .review__item_words {
+        font-size: 14px;
+    }
+    .raiting__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

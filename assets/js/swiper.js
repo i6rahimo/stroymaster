@@ -16,21 +16,24 @@ const teamslider = new Swiper ('.team__slide', {
   slideClass: 'team__slider',
   wrapperClass: 'team__slider-wrapper',
   pagination: {
-    el: '.team__swiper-pagination',
+    el: '.team__swiper-pagination, .team__swiper-pagination2',
     type: 'fraction',
   },
   pagination: {
     el: '.team__swiper-pagination2',
     type: 'bullets',
+    clickable: true
   },
   navigation: {
     nextEl: '.team-button-prev',
     prevEl: '.team-button-next',
   },
   breakpoints: {
-    
+    320: {
+      slidesPerView: 1,
+    },
+    420: {
+    slidesPerView: 'auto',
+    }
   }
 })
-
-
-console.log(teamslider);
