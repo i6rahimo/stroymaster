@@ -184,6 +184,19 @@
     .accordion__item {
         padding: 15px 16px;
     }
+    .question__wrapper {
+        padding: 20px;
+        text-align: center;
+    }
+    .question__text {
+        margin: auto;
+    }
+    .question__form {
+        align-items: center;
+    }
+    .question__title {
+        font-size: 24px;
+    }
     
 }
 
