@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="module" ></script>
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+        <!--=============== BOXICONS ===============-->
+        
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/media.css">
+
+        <title>Главная</title>
+
+    </head>
+    <body>
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__info">
+                    <div class="header__logo"></div>
+                    <!-- <img src="/assets/img/logo.jpg" alt="logo" class="header__logo"> -->
+                    <address class="header__address">
+                        <p class="header__address_location">
+                            Москва, ул.Автозаваодская, д.1 <br> <span>с 10:00 до 18:00 ежедневно</span> 
+                        </p>
+                        <p class="header__address_gmail">
+                            moyastroyka@gmail.com <br> <span class="header__address_subtitle">Социальные сети</span>
+                        </p>
+                        <a class="header__addres_phone" href="tel:+77777777">+7 777 777-00-63 <br><span class="header__address_subtitle">Заказать звонок</span></a>
+                    </address>
+                    <button class="header__btn btn">Калькулятор ремонта</button>
+                    <button class="burger">
+                        <span class="burger__span"></span>
+                        <span class="burger__span"></span>
+                        <span class="burger__span"></span>
+                    </button>
+                    <div class="header__phone_responsive">
+                        <img src="/assets/img/phone1260.svg" alt="">
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="">Ремонт квартир</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">Дизайн интерьера</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="/pages/portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">Оплата</a>
+                        </li>
+
+                        <li class="header__item">
+                            <a class="header__link" href="">Акции</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">Отзывы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">О компании</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="/pages/contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+
+
+            <section class="about container">
+                <h1 class="about__title about-title">
+                    О нашей<span class="orange-text"> компании</span>
+                </h1>
+                <div class="about__content">
+
+                    <div class="about__content_text">
+                        <p>Рад приветствовать Вас на сайте СК «Иваныч Строй». </p>
+                        <p>
+
+                            Меня зовут Сергей Иванович, и я представляю команду настоящих профессионалов в сфере дизайнерского ремонта квартир и помещений различного предназначения.
+                        </p>
+                        <p class="desktop-text">
+                            Название моей компании возникло не случайно. В детстве отец мне часто говорил, давая наставления: «Иван, строй дом, своё будущее». С тех пор прошло много времени, и я построил не только свой дом,но и много различных объектов, радующих клиентов высоким качеством внутренней отделки и нетривиальнымидизайнерскими решениями.</p>
+                        </p>
+                            <a href="#" class="btn about__btn">Подробнее о нас</a>
+                    </div>
+                    <div class="about__content_img">
+                        <img src="/assets/img/aboutbg.webp" alt="">
+                    </div>
+                </div>
+                <div class="about__items">
+                    <div class="about__item">
+                        <span class="about__item_number">945</span>
+                        <p class="about__item_text">релизованных проектов</p>
+                    </div>
+
+                    <div class="about__item">
+                        <span class="about__item_number">1245</span>
+                        <p class="about__item_text">довольных клиентов</p>
+                    </div>
+
+                    <div class="about__item">
+                        <span class="about__item_number">97%</span>
+                        <p class="about__item_text">обращений <br> по рекомендации</p>
+                    </div>
+
+                    <div class="about__item">
+                        <span class="about__item_number">82к</span>
+                        <p class="about__item_text">выполнено отделки</p>
+                    </div>
+                </div>
+                <div class="swiper swiper__responsive">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide about__item">
+                        <span class="about__item_number">945</span>
+                        <p class="about__item_text">релизованных проектов</p>
+                      </div>
+                      <div class="swiper-slide about__item">
+                        <span class="about__item_number">1245</span>
+                        <p class="about__item_text">довольных клиентов</p>
+                      </div>
+                      <div class="swiper-slide about__item">
+                        <span class="about__item_number">97%</span>
+                        <p class="about__item_text">обращений <br> по рекомендации</p>
+                      </div>
+                      <div class="swiper-slide about__item">
+                        <span class="about__item_number">82к</span>
+                        <p class="about__item_text">выполнено отделки</p>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </section>
+            <section class="serticiation container">
+                <h1 class="sertification__title ">Наши <span class="orange-text">сертификаты</span></h1>
+                <div class="sertification__img">
+                    <img src="/assets/img/sertif.png" alt="">
+                    <img src="/assets/img/sertif.png" alt="">
+                    <img src="/assets/img/sertif.png" alt="">
+                    <img src="/assets/img/sertif.png" alt="">
+                </div>
+                <div class="sertification__btn btn">Посмотреть все сертификаты</div>
+            </section>
+            <section class="order container">
+                <h1 class="order__title about-title">
+                    <span class="orange-text">Порядоак работ</span> по ремонту квартир
+                </h1>
+                <div class="order__items">
+
+                    <div class="order__item">
+                        <span class="order__item_number">01</span>
+                        <img src="/assets/img/order-phone.svg" alt="" class="order__item_img">
+                        <div class="order__item_text">Телефонный звонок или встреча в офисе</div>
+                    </div>
+
+                    <div class="order__item">
+                        <span class="order__item_number">02</span>
+                        <img src="/assets/img/order-marks.svg" alt="" class="order__item_img">
+                        <div class="order__item_text">Составление детальной сметы по дизайн-проекту</div>
+                    </div>
+
+                    <div class="order__item">
+                        <span class="order__item_number">03</span>
+                        <img src="/assets/img/order-chat.svg" alt="" class="order__item_img">
+                        <div class="order__item_text">Обсуждение и корректировка договора</div>
+                    </div>
+
+                    <div class="order__item">
+                        <span class="order__item_number">04</span>
+                        <img src="/assets/img/order-meet.svg" alt="" class="order__item_img">
+                        <div class="order__item_text">Заключение договора</div>
+                    </div>
+
+                    <div class="order__item">
+                        <span class="order__item_number">05</span>
+                        <img src="/assets/img/order-deliver.svg" alt="" class="order__item_img">
+                        <div class="order__item_text">Выход на объект и поставка материала</div>
+                    </div>
+
+                    <div class="order__item">
+                        <span class="order__item_number">06</span>
+                        <img src="/assets/img/order-repeir.svg" alt="" class="order__item_img">
+                        <div class="order__item_text">Поэтапное выполнение работы</div>
+                    </div>
+
+                    <div class="order__item">
+                        <span class="order__item_number">07</span>
+                        <img src="/assets/img/order-clean.svg" alt="" class="order__item_img">
+                        <div class="order__item_text">Финальная уборка помещений</div>
+                    </div>
+
+                    <div class="order__item">
+                        <span class="order__item_number">08</span>
+                        <img src="/assets/img/order-paper.svg" alt="" class="order__item_img">
+                        <div class="order__item_text">Подписание финальных актов</div>
+                    </div>
+                </div>
+            </section>
+            <section class="project container">
+                <h1 class="project__title about-title">Наши <span class="orange-text">проекты</span></h1>
+                <div class="project__items">
+                    <div class="project__item yellow-btn">
+                        <p class="project__item_text">Все проекты</p>
+                    </div>
+                    <div class="project__item yellow-btn">
+                        <p class="project__item_text">Диизайнерские</p>
+                    </div>
+                    <div class="project__item yellow-btn">
+                        <p class="project__item_text">Евроремонт</p>
+                    </div>
+                    <div class="project__item yellow-btn">
+                        <p class="project__item_text">Капитальный</p>
+                    </div>
+                </div>
+                <div class="project__cards_wrapper">
+                    <div class="project__cards">
+                        <div class="project__card">
+                            <img class="project__card_img" src="/assets/img/project1.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Этот проект сочетает в себе высокую функциональность оригинальную отделку и эргономность</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                        <div class="project__card">
+                            <img class="project__card_img" src="/assets/img/project1.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Этот проект сочетает в себе высокую функциональность оригинальную отделку и эргономность</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                        <div class="project__card project__card_last">
+                            <img class="project__card_img" src="/assets/img/project3.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Дом «Кливленд» спроектирован специалистами компании «ОлимпСтройСервис» для большой семьи. Особняк выполнен в стиле Райта, идеально вписывается в природу и обладает высоким функциональным наполнением.</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                    </div>
+                    <div class="project__cards">
+                        <div class="project__card">
+                            <img class="project__card_img" src="/assets/img/project1.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Этот проект сочетает в себе высокую функциональность оригинальную отделку и эргономность</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                        <div class="project__card">
+                            <img class="project__card_img" src="/assets/img/project1.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Этот проект сочетает в себе высокую функциональность оригинальную отделку и эргономность</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                        <div class="project__card project__card_last">
+                            <img class="project__card_img" src="/assets/img/project3.png" alt="">
+                            <h4 class="project__card_title">Проект 7701</h4>
+                            <p class="project__card_text">Дом «Кливленд» спроектирован специалистами компании «ОлимпСтройСервис» для большой семьи. Особняк выполнен в стиле Райта, идеально вписывается в природу и обладает высоким функциональным наполнением.</p>
+                            <a href="#" class="project__card_link">Узнать подробнее <img src="/assets/img/arrow.svg" alt="Перейти"></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn project__card_btn">Посмотреть все проекты</a>
+            </section>
+            <section class="team container">
+                <h1 class="team__title about-title">Наши <span class="orange-text">специалисты</span></h1>
+                <p class="team__subtitle">Мы работаем по ГОСТ, СНиП и DIN. Используем собственные хорошие практики ремонов, наработанные за 10 лет.</p>
+                <div class="project__items">
+                    <div class="project__item yellow-btn">
+                        <p class="project__item_text">Все сотрудники</p>
+                    </div>
+                    <div class="project__item yellow-btn">
+                        <p class="project__item_text">Диизайнерские</p>
+                    </div>
+                    <div class="project__item yellow-btn">
+                        <p class="project__item_text">Евроремонт</p>
+                    </div>
+                    <div class="project__item yellow-btn">
+                        <p class="project__item_text">Капитальный</p>
+                    </div>
+                </div>
+                <div class="team__slide">
+                    <!-- Additional required wrapper -->
+                    <div class="team__slider-wrapper">
+                      <!-- Slides -->
+                      <div class="team__slider slider-large">
+                          <img class="large-img" src="/assets/img/team-slide1.png" alt="">
+                          <p class="team__slider_name">Иванов Алексей Дмитриевич</p>
+                          <p class="team__slider_profession">Генеральный директор</p>
+                          <p class="team__slider_desc">Работа с монтажом инженерных сетей с выравниваем всех стен и потолков, но с применением материалов.</p>
+                          <p class="team__slider_sertification"><img src="/assets/img/team-slide-finger.svg" alt="Палец вверх">Серитификация пройдена</p>
+                      </div>
+                      <div class="team__slider">
+                            <div class="team__slider_item">
+                                <img src="/assets/img/team-slide2.png" alt="">
+                                <p class="team__slider_name">Лебедева Анастасия Владимировна</p>
+                                <p class="team__slider_profession">Маркетолог</p>
+                            </div>
+                            <div class="team__slider_item">
+                                <img src="/assets/img/team-slide3.png" alt="">
+                                <p class="team__slider_name">Смирнов Дмитрий Николаевич</p>
+                                <p class="team__slider_profession">Маркетолог</p>
+                            </div>
+                       </div>
+                       <div class="team__slider">
+                        <div class="team__slider_item">
+                            <img src="/assets/img/team-slide4.png" alt="">
+                            <p class="team__slider_name">Алексеев Олег Сергеевич</p>
+                            <p class="team__slider_profession">Дизайнер</p>
+                        </div>
+                        <div class="team__slider_item">
+                            <img src="/assets/img/team-slide5.png" alt="">
+                            <p class="team__slider_name">Соколов Игорь Сергеевич</p>
+                            <p class="team__slider_profession">HR менеджер</p>
+                        </div>
+                   </div>
+                     <div class="team__slider">
+                    <div class="team__slider_item">
+                        <img src="/assets/img/team-slide2.png" alt="">
+                        <p class="team__slider_name">Лебедева Анастасия Владимировна</p>
+                        <p class="team__slider_profession">Маркетолог</p>
+                    </div>
+                    <div class="team__slider_item">
+                        <img src="/assets/img/team-slide2.png" alt="">
+                        <p class="team__slider_name">Лебедева Анастасия Владимировна</p>
+                        <p class="team__slider_profession">Маркетолог</p>
+                    </div>
+                      </div>    
+                      
+                    </div>
+                    <div class="team-button-next">
+                        <img src="/assets/img/team-btn-arrow.svg" alt="">
+                    </div>
+                    <div class="team-button-prev">
+                        <img src="/assets/img/team-btn-arrow.svg" alt="">
+                    </div>
+                    <div class="team__swiper-pagination2"></div>
+                    <div class="team__swiper-pagination"></div>
+                </div>
+
+                  </div> 
+                </div>
+            </section>
+            <section class="review container">
+                <h1 class="review__title">Отзывы <span class="orange-text">наших клиентов</span></h1>
+                <div class="review__items">
+                    <div class="review__item">
+                        <img src="/assets/img/review11.png" alt="">
+                        <div class="review__item_text">
+                            <p class="review__item_name">Гаврилов Андрей Викторович</p>
+                            <div class="raiting__wrapper">
+                                <div class="review__item_raiting">
+                                    <input class="raiting__star" type="radio" name="review-raiting-andrey" value="1" aria-label="Ужасно" checked>
+                                    <input class="raiting__star" type="radio" name="review-raiting-andrey" value="2" aria-label="Нормально" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-andrey" value="3" aria-label="Хорошо" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-andrey" value="4" aria-label="Прекрасно" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-andrey" value="5" aria-label="Отлично" >
+                                </div>
+                                <span>16 января 2022</span>
+                            </div>
+                            <p class="review__item_words">Уже через 5 месяцев, я смог заехать в построенный дом.
+                                Ремонт получился просто шикарный, вид очень презентабельный и сразу «говорит» о статусе хозяина, везде сухо – нет никаких «мокрых» углов.</p>
+                        </div>
+                    </div>
+
+                    <div class="review__item">
+                        <img src="/assets/img/review4.png" alt="">
+                        <div class="review__item_text">
+                            <p class="review__item_name">Алексеев Олег Сергеевич</p>
+                            <div class="raiting__wrapper">
+                                <div class="review__item_raiting">
+                                    <input class="raiting__star" type="radio" name="review-raiting-aleksei" value="1" aria-label="Ужасно" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-aleksei" value="2" aria-label="Нормально" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-aleksei" value="3" aria-label="Хорошо" checked>
+                                    <input class="raiting__star" type="radio" name="review-raiting-aleksei" value="4" aria-label="Прекрасно" checked>
+                                    <input class="raiting__star" type="radio" name="review-raiting-aleksei" value="5" aria-label="Отлично" checked>
+                                </div>
+                                <span>16 января 2022</span>
+                            </div>
+                            <p class="review__item_words">Огромное спасибо прорабу Борису – побольше бы таких добрых и отзывчивых людей. Очень быстро и качественно. Мусор за собой убрали. Советую всем данную компанию.</p>
+                        </div>
+                    </div>
+
+                    <div class="review__item">
+                        <img src="/assets/img/review2.png" alt="">
+                        <div class="review__item_text">
+                            <p class="review__item_name">Михайлова Алена Евгеньевна</p>
+                            <div class="raiting__wrapper">
+                                <div class="review__item_raiting">
+                                    <input class="raiting__star" type="radio" name="review-raiting-mikhail" value="1" aria-label="Ужасно" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-mikhail" value="2" aria-label="Нормально" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-mikhail" value="3" aria-label="Хорошо" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-mikhail" value="4" aria-label="Прекрасно" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-mikhail" value="5" aria-label="Отлично" checked>
+                                </div>
+                                <span>16 января 2022</span>
+                            </div>
+                            <p class="review__item_words">Решила утеплить загородный дом, заказала утеплитель эковату в этой компании, с их монтажем, ребята шустрые, отреагировали быстро. На следующий день провели монтаж. Спасибо.</p>
+                        </div>
+                    </div>
+
+                    <div class="review__item">
+                        <img src="/assets/img/review1.png" alt="">
+                        <div class="review__item_text">
+                            <p class="review__item_name">Новиков Дмитрий Иванович</p>
+                            <div class="raiting__wrapper">
+                                <div class="review__item_raiting">
+                                    <input class="raiting__star" type="radio" name="review-raiting-dmitriy" value="1" aria-label="Ужасно" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-dmitriy" value="2" aria-label="Нормально" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-dmitriy" value="3" aria-label="Хорошо" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-dmitriy" value="4" aria-label="Прекрасно" >
+                                    <input class="raiting__star" type="radio" name="review-raiting-dmitriy" value="5" aria-label="Отлично" checked>
+                                </div>
+                                <span>16 января 2022</span>
+                            </div>
+                            <p class="review__item_words">Об этой компании я могу говорить долго и хорошо. Потому что именно ее сотрудники помогли нам в осуществлении нашей очень давней мечты о собственном доме.</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <a class="review__btn btn">Посмотреть все отзывы</a>
+            </section>
+            <section class="ask container about-ask">
+                <div class="ask__wrapper about-page--wrapper">
+                    <h2 class="ask__title">У вас остались вопросы</h2>
+                    <p class="ask__text">Пожалуйста, заполните форму ниже. Мы постараемся ответить как можно быстрее и предоставить всю необходимую информацию по вашему вопросу.</p>
+                    <form action="" class="ask__form">
+                        <input type="text" class="ask__input" placeholder="Ваше имя">
+                        <input type="text" class="ask__input" placeholder="Ваш номер телефона">
+                        <button class="ask__btn btn">Отправить</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer container">
+            <div class="footer__wrapper">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <h3 class="footer__item_title">О компании </h3>
+                    <a  href="#"class="footer__item_link">О нас</a>
+                    <a  href="#"class="footer__item_link">Презентация</a>
+                    <a  href="#"class="footer__item_link">Реквизиты</a>
+                    <a  href="#"class="footer__item_link">Вакансии</a>
+                    <a  href="#"class="footer__item_link">Контакты</a>
+                    <a  href="#"class="footer__item_link">Команда</a>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__item_title">О компании</h3>
+                    <a  href="#"class="footer__item_link">О нас</a>
+                    <a  href="#"class="footer__item_link">Презентация</a>
+                    <a  href="#"class="footer__item_link">Реквизиты</a>
+                    <a  href="#"class="footer__item_link">Вакансии</a>
+                    <a  href="#"class="footer__item_link">Контакты</a>
+                    <a  href="#"class="footer__item_link">Команда</a>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__item_title">О компании</h3>
+                    <a  href="#"class="footer__item_link">О нас</a>
+                    <a  href="#"class="footer__item_link">Презентация</a>
+                    <a  href="#"class="footer__item_link">Реквизиты</a>
+                    <a  href="#"class="footer__item_link">Вакансии</a>
+                    <a  href="#"class="footer__item_link">Контакты</a>
+                    <a  href="#"class="footer__item_link">Команда</a>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__item_title">О компании</h3>
+                    <a  href="#"class="footer__item_link">О нас</a>
+                    <a href="#" class="footer__item_link">Презентация</a>
+                    <a  href="#"class="footer__item_link">Реквизиты</a>
+                    <a  href="#"class="footer__item_link">Вакансии</a>
+                    <a  href="#"class="footer__item_link">Контакты</a>
+                    <a  href="#"class="footer__item_link">Команда</a>
+                </div>
+                <address class="footer__item footer__address">
+                    <h3 class="footer__item_title">Наши контакты</h3>
+                    <a class="footer__item_link"> <img src="/assets/img/location.svg" alt=""> ул. Кировоградская 7, офис 9</a>
+                    <a class="footer__item_link"> <img src="/assets/img/time.svg" alt=""> С 10.00 до 18.00 ежедневно</a>
+                    <a class="footer__item_link" type="tel"> <img src="/assets/img/address-phone.svg" alt="">+7 499 394-00-62</a>
+                    <a class="footer__item_link"><img src="/assets/img/mail.svg" alt=""> amastrroka@ya.ru</a>
+                    <div class="footer__address_icons">
+                        <a class="footer__address_vk" href="#"><img src="/assets/img/vk.svg" alt=""></a>
+                        <a class="footer__address_whatsapp" href="#"><img src="/assets/img/wh.svg" alt=""></a>
+                        <a class="footer__address_facebook" href="#"><img src="/assets/img/fb.svg" alt=""></a>
+                    </div>
+                </address>
+            </div>
+            <p class="footer__desc">2022 'Иваныч строй'</p>
+        </div>
+        </footer>
+        <script src="/assets/js/main.js"></script>
+        <script type="module" src="/assets/js/swiper.js"></script>
+    </body>
+</html>

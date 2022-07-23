@@ -768,6 +768,8 @@ select {
   margin: 150px 0 45px;
   text-align: center;
   font-size: var(--biggest-font-size);
+  color: #333333;
+  font-weight: 700;
 }
 .work__items {
   display: flex;
@@ -1623,4 +1625,20 @@ select {
 }
 .ask__btn:hover {
   color: #ffff;
+}
+
+.portfolio__ask {
+  min-height: 496px ; 
+  background-image: url('/assets/img/portfoliobg.webp');
+}
+
+.about-title {
+  margin: 91px 0 0;
+}
+.about-page--wrapper  {
+  margin: 144px auto 60px ;
+}
+.about-ask {
+  min-height: 498px;
+  background-image: url('/assets/img/about-page-bg.webp');
 }
