@@ -140,8 +140,12 @@
     }
     .team__slide {
         max-width: 100%;
-
     }
+    .footer__items {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
 }
 @media (max-width: 726px ) {
     .swiper__responsive {
@@ -196,6 +200,33 @@
     }
     .question__title {
         font-size: 24px;
+    }
+    .map__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .map__address {
+        top: 0;
+        right: 0;
+        position: relative;
+        margin-bottom: 48px;
+        padding: 20px;
+    }
+    .map__address_text {
+        font-size: 18px;
+    }
+    .ask__wrapper {
+        padding: 20px;
+    }
+    .ask {
+        margin: 0 auto 130px;
+    }
+    .ask__title {
+        text-align: center;
+        font-size: 26px;
+    }
+    .ask__text {
+        text-align: center;
     }
     
 }
